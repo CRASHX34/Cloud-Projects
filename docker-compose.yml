@@ -6,7 +6,7 @@ services:
       - "127.0.0.1:4566:4566"
       - "127.0.0.1:4510-4559:4510-4559"
     environment:
-      - LOCALSTACK_AUTH_TOKEN=ls-LUYeVOlA-0658-KOJi-dABa-sahu8844b138
+      - LOCALSTACK_AUTH_TOKEN=${LOCALSTACK_AUTH_TOKEN}
       - DOCKER_HOST=unix:///var/run/docker.sock
       - PERSISTENCE=1
     volumes:
