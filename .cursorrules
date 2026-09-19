@@ -1,0 +1,6 @@
+# Cloud Infrastructure & Automation Guidelines
+- Environment: Ubuntu WSL2, Python 3, Boto3, Docker, LocalStack.
+- Cloud Target: AWS (EC2, S3, Lambda, VPC, RDS, SNS/SQS).
+- IaC / Config: Terraform, Docker Compose.
+- Testing: When writing AWS automation or mock scripts, default to LocalStack endpoints (http://localhost:4566) unless production configs are specified.
+- Style: Modular, type-hinted Python functions with clear error handling and cleanup logic. Avoid hardcoded credentials.
